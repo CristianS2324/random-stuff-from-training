@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 snap_prefix=snap
 
