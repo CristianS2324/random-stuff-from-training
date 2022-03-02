@@ -2,8 +2,8 @@
 
 snap_prefix=snap
 
-#number of snapshots which can be made(whichever becomes 5th gets deleted) 
-retention=4
+#number of snapshots which can be made(whichever becomes 4th gets deleted) 
+retention=3
 
 #Utilities
 date=/bin/date
