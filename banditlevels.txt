@@ -1,0 +1,103 @@
+0-1
+cat readme
+boJ9jbbUNNfktd78OOpsqOltutMc3MY1
+
+1-2
+cat < -
+CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
+
+2-3
+cat spaces\ in\ this\ filename
+UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
+
+3-4
+cat inhere/.hidden
+pIwrPrtPN36QITSp3EQaw936yaFoFgAB
+
+4-5
+for x in {0..9}; do file ./-file0$x; done
+cat ./-file07
+koReBOKuIDDepwhWk7jZC0RTdopnAYKh
+
+5-6
+find . -size 1033c
+cat ./maybehere07/.file2
+DXjZPULLxYr17uwoI01bNLQbtFemEgo7
+
+6-7
+find / -size 33c -group bandit6 -user bandit7
+cat /var/lib/dpkg/info/bandit7.password
+HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
+
+7-8
+grep millionth data.txt
+cvX2JJa4CFALtqS87jk27qwqGhBM9plV
+
+8-9
+sort data.txt |uniq -u
+UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
+
+9-10
+truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
+
+10-11
+base64 data.txt -d
+IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
+
+11-12
+cat data.txt
+echo Gur cnffjbeq vf 5Gr8L4qetPEsPk8htqjhRK8XSP6x2RHh | tr '[a-z]' '[n-za-m]' | tr '[A-Z]' '[N-ZA-M]'
+5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
+
+12-13
+create new directory under /tmp
+copy data.txt in new directory
+xxd -r data.txt > bandit (reverse hexdump)
+file bandit (check how the file was archived)
+use gunzip bandit.gz
+rename file to new archive extension
+use bzip2 -d bandit.bz2
+rename file to new archive extension
+tar -xf bandit.tar
+repeat until file isnt archived anymore
+cat data8 (file without archive)
+8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL
+
+13-14
+ssh -i sshkey.private bandit14@localhost
+cat /etc/bandit_pass/bandit14
+4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
+
+14-15
+echo 4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e | netcat localhost 30000
+BfMYroe26WYalil77FoDi9qh59eK5xNr
+
+15-16
+openssl s_client -connect localhost:30001
+cluFn7wTiGryunymYOu4RcffSxQluehd
+
+16-17
+nmap -v -A -T4 -p 31000-32000 localhost
+port 31790
+openssl s_client -connect localhost:31790
+get private key
+paste it into a new file
+use file to log in as bandit17@localhost
+cat /etc/bandit_pass/bandit17
+xLYVMN9WE5zQ5vHacb0sZEVqbrp7nBTn
+
+17-18
+diff passwords.new passwords.old
+try both passwords :
+kfBf3eYk5BPBRzwjqutbbfE887SVc5Yd
+
+18-19
+ssh -T bandit18@bandit.labs.overthewire.org
+cat readme
+IueksS7Ubh8G3DCwVzrTd8rAVOwq3M5x
+
+19-20
+./bandit20-do cat /etc/bandit_pass/bandit20
+GbKksEFF4yrVs6il55v6gwY5aVje5f0j
+
+
