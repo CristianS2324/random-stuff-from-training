@@ -1,0 +1,14 @@
+FROM ubuntu
+
+RUN apt update
+RUN apt install nginx -y
+RUN apt install curl -y
+RUN apt install jq -y
+RUN useradd nginx
+RUN usermod -a -G nginx nginx
+RUN mkdir -p /run/nginx
+RUN chown -R nginx:nginx /run/nginx
+RUN chmod 775 /run/nginx
+COPY decode.sh decode.sh
+RUN chmod +x /decode.sh
+ENTRYPOINT ["./decode.sh"]
