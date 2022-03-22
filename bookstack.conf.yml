@@ -1,8 +1,8 @@
 server{
     listen 80;
-    server_name temadocker123.com 192.168.17.69;
+    server_name temadocker123.com 192.168.16.160;
 
     location / {
-    proxy_pass http://192.168.17.69:6875/;
+    proxy_pass http://192.168.16.160:6875/;
 }
 }
