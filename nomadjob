@@ -1,0 +1,60 @@
+job "ELK" {
+  type        = "service"
+  datacenters = ["dc1"]
+
+  group "elk" {
+
+    count = 1
+
+    restart {
+      attempts = 3
+      mode     = "fail"
+    }
+
+    task "Kibana" {
+      driver       = "docker"
+      config {
+        image   = "docker.elastic.co/kibana/kibana:8.1.2-amd64"
+        hostname = "kibana"
+      }
+
+      service {
+        name = "test-kibana"
+        address_mode = "driver"
+        port = 5601
+      }
+
+      resources {
+        cpu    = 1200
+        memory = 2048
+      }
+    }
+      task "Elasticsearch" {
+      driver       = "docker"
+      user         = "elasticsearch"
+
+
+      config {
+        image        = "docker.elastic.co/elasticsearch/elasticsearch:8.1.2-amd64"
+        hostname     = "123"
+      }
+
+      service {
+        name         = "randomjobname"
+        port         = 9300
+        address_mode = "driver"
+      }
+
+      service {
+        name = "elasticjob"
+        port = 9200
+        address_mode = "driver"
+      }
+
+      resources {
+        cpu    = 1200
+        memory = 2048
+      }
+    }
+  }
+}
